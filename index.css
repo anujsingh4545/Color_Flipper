@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color: rgba(181, 219, 223, 0.466);
+}
+
+
+/* --- Main navbar --- */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color:  rgb(252, 250, 250);
+    text-align: center;
+    align-items: center;
+    box-shadow: 4px 0px 20px 4px rgba(0, 0, 0, 0.473);
+}
+nav p{
+    margin: 0.6rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bolder !important;
+    color: teal;
+}
+.list{
+    display: flex;
+}
+.list a{
+    text-decoration: none;
+}
+.list p{
+    margin: 0.6rem 1rem;
+    font-size: 1.3rem;
+    color: black !important;
+    font-weight: bolder !important;
+    cursor: pointer;
+}
+.list p:hover{
+    color: teal !important;
+}
+  
+/* --- Main Section --- */
+
+main{
+    display: flex;
+    text-align: center;
+    /* border: 2px solid red; */
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.content{
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
+}
+.content h1{
+    color: white;
+    padding: 0.8rem 0.5rem;
+    font-size: 2.5rem;
+    background-color: black;
+    border-radius: 1rem;
+    margin: 3rem 0rem;
+}
+span{
+    color: teal !important;
+}
+.content button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold !important;
+    color: black;
+    padding: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 0.8rem;
+    background-color: transparent !important;
+    cursor: pointer;
+    transition: 1s;
+}
+.content button:hover{
+    background-color: black !important;
+    color: white;
+}
+
+
+
+
+ /* --- Responsive Section --- */
+
+ @media(max-width:1050px){
+
+    .content h1{
+        font-size: 1.5rem;
+    }
+ }
+
+ @media(max-width:550px){
+
+    .content h1{
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        margin: 2rem 0rem;
+    }
+    .content{
+        /* border: 2px solid red; */
+        width: 90%;
+        margin: auto;
+    }
+    nav p{
+        margin: 0.6rem 1rem;
+        font-size: 0.8rem;
+        font-weight: bolder !important;
+        color: teal;
+    }
+   
+    .list p{
+        margin: 0.6rem 1rem;
+        font-size: 0.8rem;
+        color: black !important;
+        font-weight: bolder !important;
+        cursor: pointer;
+    }
+ }
